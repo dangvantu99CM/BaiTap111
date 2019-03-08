@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <title>StudentManager</title>
+        <script type = "text/javascript" src = "StudentJavaScriptStyle.js"></script>
+        <script type = "text/javascript" src = "js/Validation.js"></script>
+        <script type = "text/javascript" src = "js/main.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "CssStyle.css"/> 
+       
+        <style>
+            
+            table,tr,th,td{
+
+                border: 1px solid #e6e6e6;
+                border-collapse: collapse;
+                text-align: center;
+                padding-top:3px;
+                padding-bottom: 3px;
+                          
+            }
+            
+            
+        </style>
+
+    </head>
+    <body>
+        <div class = "container">
+            <!--
+            
+        ============================== left - container ====================================
+            
+            -->
+            <div class = "left-container">
+                <div class = "box-Students-data">
+
+                    <div class = "headerOfList">
+                        <h4 class = "heading">Creat Student</h4>
+                    </div>
+
+                    <div class = "reset_data">
+
+                        <button id = "reset-all-data" >Reset-Data</button>
+
+                    </div>
+
+                    <form id = "my_form">
+                        
+                        <input id  = "name" class ="input"  type = "text" name ="name" placeholder = "Enter name Here"/>
+                        <input id = "address" class ="input"   type = "text" name = "address" placeholder = "Enter address Here"/>
+                        <input id  = "age" class ="input"   type = "text" name = "age" placeholder = "Enter age Here"/>
+                        <input id = "id" class ="input" type = "text" name = "id" placeholder = "Enter ID Here"/>
+                        <input id = "BirthYear" class ="input" name ="BirthYear" type = "text" placeholder = "Enter BirthYear Here"/>
+                        <input id = "Khoa" class ="input" type = "text" name ="Khoa" placeholder = "Enter Course Here"/>
+                        <input id = "nganh_hoc" class ="input" type = "text" name ="nganh_hoc" placeholder = "Enter Majors Here"/>
+                        <input id = "phoneNumber" class ="input" type = "text" name = "phoneNumber" placeholder = "Enter Phone Number Here"/>
+                        <input id  = "email" class ="input" type = "text" name ="email" placeholder = "Enter email Here"/>
+                        
+                    </form>
+
+                    <button id ="submit" class = "submit-add">OK</button>
+
+                </div>
+
+                <div class = "box-search ">
+
+
+                    <h4 class = "heading">Search-Student</h4>
+
+                    <div class = "search_id">
+
+                        <form id = "form_ser">
+                            <input id ="input-search" type = "text" placeholder="Enter ID Here"/>
+                        </form>
+                        
+                        <button id = "search-button">OK</button>
+
+
+                    </div>
+
+                </div>
+
+                <div class = "box-delete">
+
+                    <h4 class = "heading">Delete-Student</h4>
+                    <div class = "del_id">
+
+                        <form id = "form_del">
+                            <input id ="in-del" type = "text" placeholder="Enter ID Here">
+                        </form>
+
+                        <button id = "del-button">OK</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--
+            
+            =========================================== right - container ========================
+            
+            -->
+            <div class = "right-container">
+
+
+                <div class = "list-sv">
+                    <h4 class = "listStudent">List-Student</h4>
+      
+                    <table id = "table_object">
+                        
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

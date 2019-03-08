@@ -1,0 +1,288 @@
+*{
+    margin:0px;
+    padding:0px;
+    border: none;
+    font-family: arial sans-serif;
+
+}
+body{
+    width:100%;
+    height:100%;
+}
+/**
+    ========================== Container Css =========================================
+*/
+#container{
+    width:100%;
+    max-height:100%;
+    float:left;
+}
+/**
+    ========================== Navigation Css =========================================
+*/
+#container #navigation{
+
+    width:100%;
+    height:46px;
+    background-color: #595959;
+    float:left;
+    box-shadow: 1px 1px #ccc;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+
+}
+#container #navigation .item_nav{
+    float:left;
+    width:auto;
+    height:100%;
+    text-align: center;
+    line-height: 46px;
+}
+.item_nav .select_home{
+    float:left;
+    width:auto;
+    height:100%;
+    color:#e6e6e6;
+    display: block;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.item_nav .onblur:hover{
+    background-color:#000000;
+    cursor: pointer;
+
+}
+.item_nav .onblur{
+    transition: background-color 1s;
+}
+.item_more{
+
+    position: relative;
+
+}
+
+.item_home .icon_home{
+
+    margin-top: 12px;
+    margin-left: -4px;
+    font-size: 20px;
+
+
+}
+.item_nav .item_more .item_more_text {
+    float:left;
+    display: block;
+    padding-right: 14px;
+}
+.item_nav .icon_sort{
+    position: absolute;
+    top: 11px;
+    right: 2px;
+    float:left;
+    padding-right: 13px;
+}
+#navigation .duavephai{
+    float:right;
+}
+
+/**
+
+====================================== Left-Container ==============================================
+    
+*/
+
+#container #left-container{
+    float:left;
+    background-color: #f2f2f2;
+    width: 18%;
+    max-height: 100%;
+    padding-top:46px;
+    overflow-y: scroll;
+    position: fixed;
+}
+#container #left-container p{
+    margin-left:20px;
+
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+#container #left-container .list_tab{
+    float: left;
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+}
+#left-container .list_tab .link_tab{
+
+    display: block;
+    text-decoration: none;
+    width:100%;
+    color: #000;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+
+}
+.list_tab .link_tab .text_tab{
+    display: block;
+    padding-left:20px;
+
+}
+#left-container .list_tab .link_tab:hover{
+    background-color: #ccc;
+}
+#left-container .list_tab .link_tab{
+    transition: background-color .3s;
+}
+
+
+
+/**
+======================================== Right - Container =========================================
+*/
+
+#container #right-container{
+
+    float:right;
+    width:82%;
+    max-height: 100%;
+    padding-top: 66px;
+  
+
+}
+#container #right-container .container-begin-right{
+    float:right;
+    width:100%;
+}
+#right-container .container-begin-right .title_right_container{
+    float:left;
+    width:100%;
+    height:32px;
+}
+#right-container .container-begin-right .title_right_container .list_title{
+    width: 100%;
+    height: 100%;
+}
+#right-container .container-begin-right .text_of_list{
+
+    list-style: none;
+    float:left;
+    height:100%;
+    width: 23.89%;
+    margin-right: 16px;
+    background-color: #f2f2f2;
+
+}
+#right-container .text_of_list:hover{
+    background-color: #ccc;
+}
+#right-container .text_of_list:nth-last-of-type(1){
+   
+    margin-right: 0px;
+
+}
+#right-container .text_of_list{
+    transition: background-color .3s;
+}
+#right-container .container-begin-right .link_text_right{
+    text-decoration: none;
+    color:#000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+}
+
+/**
+============================ Begin - text - footer ====================================
+*/
+#right-container .text_decription{
+
+    float:left;
+    height:50%;
+    margin-top:30px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    width:100%;
+}
+#right-container .text_decription .text{
+    float:left;
+    margin-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 23.89%;
+}
+#right-container .text_decription .text:nth-last-of-type(1){
+    margin-right: 0px;
+    
+}
+#right-container .text_decription .text .button_text_last{
+    display: block;
+    width: 116px;
+    margin-left: 69px;
+    height: 32px;
+    margin-top: 12px;
+    background-color: #595959;
+    color: white;
+    cursor:pointer;
+}
+#right-container .text_decription .text .button_text_last:hover{
+    background-color: #cccccc;
+    color:#000;
+    
+}
+#right-container .text_decription .text .title{
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+.text_decription .text ul{
+    text-align: center;
+    margin-top: 18px;
+
+}
+.text_decription .text .text_element{
+    margin-top: 5px;
+    list-style: none;
+
+}
+.text_decription .text ul a{
+    text-decoration:none;
+    color: #000;
+}
+.text_decription .text ul a:hover{
+    color:#66ff66;
+    border-bottom: 1px solid #66ff66;
+}
+/**
+
+================================================= Begin Text Decription ==================================
+
+*/
+
+#right-container .text-decription-last{
+    float:left;
+    padding-top:20px;
+}
+#right-container .text-decription-last #p1{
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    opacity: 0.6;
+}
+#right-container .text-decription-last #p1 .link_decoration{
+    text-decoration: none;
+    color:#000;
+}
+#right-container .text-decription-last #p1 .link_decoration:hover{
+    color:#66ff66;
+    border-bottom: 1px solid #66ff66;
+}
+
+
+
+
+

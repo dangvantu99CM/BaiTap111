@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+    border:none;
+    font-family: sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    top: 0px;
+}
+.container-fluid{
+    padding-top:15px;
+    width:100%;
+    min-height: 100%; 
+}
+.container-fluid .col-xs-12{
+    
+    background-color: #ffffff;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+  
+}
+.container-fluid .row{
+    
+      margin-bottom: 4px;
+    
+}
+.container-fluid .row:nth-last-of-type(1){
+    margin-bottom: 0px;
+}
+.container-fluid .col-xs-12 .link_nav{
+    color:#000;
+    text-decoration: none;
+    display: block;
+    height:100%;
+    width: 100%;
+    background-color:#f2f2f2;
+}
+
+.container-fluid .col-xs-12 .link_nav:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.container-fluid .nav{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+/**
+
+    ========================== Begin list case ====================================
+    
+*/
+.container-fluid .listcase .text_element{
+    list-style: none;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.container-fluid .listcase{
+    padding-bottom: 15px;
+  
+}
+
+.container-fluid .listcase .case_1{
+    text-align: center;
+}
+.container-fluid .listcase .case_1 a{
+    color: #000;
+}
+.container-fluid .listcase .case_1 p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.container-fluid .listcase .case_1 a:hover{
+    color:#99ff99;
+}
+
+/**
+    ========================================== Begin Css - text of footer ====================================
+*/
+
+.container-fluid .text-footer{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
