@@ -1,0 +1,34 @@
+*{
+    border: none;
+    margin: 0;
+    padding:0;
+}
+
+#wrapper{
+    padding:40px;
+}
+#nav{
+    width:200px;
+    height:345px;
+    background: #fff;
+}
+#nav ul {
+    width:100%;
+}
+#nav ul li{
+    list-style: none;
+    width:100%;
+}
+#nav ul li a{
+    text-decoration:none;
+    color:#808080;
+    
+}
+
+#nav ul li:hover{
+    background: #ebebeb;
+    color:#0d0d0d;
+    cursor: pointer;
+}
+
+    

@@ -1,0 +1,37 @@
+#wrapper{
+    width: 980px;
+    
+    margin : 0 auto;
+}
+#header{
+    width: 980px;
+    height : 100px;
+    background-color: red;
+}
+#menu{
+    width:  980px;
+    height : 60px;
+    background-color : green;
+}
+#container{
+    width : 980px;
+    
+}
+#left-container{
+    width : 180px;
+    height : 500px;
+    background-color:#004175;
+    float : left;
+}
+#right-container{
+    width : 800px;
+    height : 500px;
+    background-color: yellowgreen;
+    float:  left;
+}
+#footer{
+    width : 980px;
+    height: 150px;
+    background-color:#ccc;
+    float: left;
+}

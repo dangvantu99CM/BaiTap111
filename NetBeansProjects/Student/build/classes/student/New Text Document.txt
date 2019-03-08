@@ -1,0 +1,4 @@
+<html>
+<applet code = "Student.class" weight = 50 height = 50>
+</applet>
+</html>

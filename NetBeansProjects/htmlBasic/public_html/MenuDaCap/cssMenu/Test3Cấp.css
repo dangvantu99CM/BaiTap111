@@ -1,0 +1,86 @@
+*{
+    border: none;
+    margin: 0;
+    padding:0;
+    font-family: arial,sans-serif;
+}
+body{
+    background: #f1f1f1;
+}
+#wrapper{
+    padding: 40px;
+}
+#nav .cha-list , #nav .sub-list,#nav .sub-list-01{
+    background: #fff;
+    width: 230px;
+    padding:8px 0;
+    box-shadow: 0 0 1px #ccc;
+}
+#nav ul,#nav .sub-list > ul{
+    width: 100%;
+    position: relative;
+    float: left;
+    height:400px;
+    
+}
+#nav li{
+    height:24px;
+}
+#nav > ul > li,#nav .sub-list > ul > li{
+    list-style: none;
+    padding: 4px 0;
+    float: left;
+    width: 100%;
+    
+}
+#nav ul li a{
+    
+    text-decoration: none;
+    color:#333333;
+    float: left;
+    width: 100%;
+    margin-top: 4px;
+    
+}
+#nav > ul > li:hover ,#nav .sub-list > li:hover{
+    cursor: pointer;
+    background: #ebebeb;
+    color:#000;
+}
+#nav .cha-list .sub-list,#nav .sub-list .sub-list-01{
+    position: absolute;
+    width:100%;
+    left: 230px;
+    top: 0px;
+    background: #fff;
+    padding: 8px 0;
+    box-shadow: 0 0 1px #ccc;
+}
+#nav .sub-list > li,#nav .sub-list-01 > li{
+    cursor: pointer;
+    list-style: none;
+    padding: 4px 0;
+}
+#nav .sub-list,#nav .sub-list-01{
+    display: none;
+}
+#nav .sub-list > li:hover,#nav .sub-list-01 > li:hover{
+    background: #ebebeb;
+    color:#000;
+}
+#nav > ul > li:hover .sub-list,#nav > ul > li:hover span,#nav .sub-list > li:hover .sub-list-01,#nav .sub-list > li:hover span{
+    display: block;
+}
+#nav > ul > li > a,#nav .sub-list > li > a{
+    position: relative;
+}
+#nav > ul > li > a > span,#nav .sub-list > li > a > span{
+    font-size: 22px;   
+    display:block ;
+    float: left;
+    position: absolute;
+    top: -5px;
+    right: 3px;
+    display: none;
+}
+

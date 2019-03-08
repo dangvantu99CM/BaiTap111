@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "Script/MyScript.js">
+
+        </script>
+    </head>
+    <body>
+        <script>
+
+            var http = new XMLHttpRequest();
+            http.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);// chuan bi cho ket noi
+            // request == 2
+            // thoi gian qua trinh xu ly yeu cau ket noi >> request == 3
+            // gui ket noi di >> request == 4
+            // gui request di >> http.send();
+            http.send();
+            console.log(http);
+
+            http.onreadystatechange = function () {
+
+                if (this.readyState === 4 && this.status === 200) {
+                    renderData(this.responseText);
+                }
+
+            };
+            function renderData(text) {
+                
+                var result_json = text;
+                    var arr_Object = JSON.parse(result_json);
+                    for (let object of arr_Object) {
+                        console.log(object);
+                    }
+                
+            }
+
+        </script>
+        <div>TODO write content</div>
+    </body>
+</html>

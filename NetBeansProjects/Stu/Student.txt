@@ -1,0 +1,4 @@
+Danh Sach sinh vien
+So luong sinh vien: 2
+Student [name=A, msv=?�, address=?erwe, gpa=3.0, birthyear=222]
+Student [name=f, msv=sfds, address=fdsf, gpa=1.0, birthyear=21212]

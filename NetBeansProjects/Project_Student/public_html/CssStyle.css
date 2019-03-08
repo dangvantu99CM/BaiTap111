@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;	
+}
+.container{
+    width:100%;
+    height:100%;
+    float:left;
+
+}
+/*
+========================= left - container ========================================
+*/
+.container .left-container{
+    float:left;
+    width:24%;
+    border-right: 1px solid #000;
+    background: #ccc;
+    height:98vh;
+    min-height: 600px;
+    margin-left:6px;
+    position: fixed;
+    overflow-x: scroll;
+    margin-top:8px;
+    z-index: 2;
+
+}
+.box-Students-data input,.box-search .search_id #input-search,.box-delete #in-del{
+    height:24px;
+    float:left;
+    margin-top:8px;
+    width: 252px;
+    border-radius: 3px;
+}
+.left-container .box-Students-data{
+    float: left;
+    width: 256px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+    height: 376px;
+    padding-bottom: 4px;
+    position:relative;
+
+}
+.left-container .box-Students-data .reset_data{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.left-container .reset_data #reset-all-data{
+    width: 72px;
+    height: 24px;
+    color:red;
+    border-radius: 3px;
+}
+.left-container .box-search,.box-delete{
+    float: left;
+    width: 256px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #000;
+    height: 100px;
+    padding-bottom: 4px;
+}
+
+.left-container .box-Students-data .submit-add{
+    width:50px;
+    position: relative;
+    top: 8px;
+    height:24px;
+}
+.left-container .box-search .title_search{
+    float:left;
+    margin-right: 14px;
+
+}
+.left-container .box-search .search_id , .left-container .box-delete .del_id {
+    float:left;
+    padding-top: 10px;
+    position: relative;
+}
+.left-container .box-search #search-button,.left-container #del-button{
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    top: 55px;
+    left: 0;
+}
+
+/*
+
+============================== right - container ===============================
+
+*/
+.container .right-container{
+
+    float:right;
+    width:75%;
+    position: relative;
+    margin-right:3px; 
+}
+
+.right-container .list-sv{
+    float: right;
+    width: 100%;
+
+}
+
+.right-container .list-sv .listStudent{
+    position: fixed;
+    background: white;
+    width:100%;
+    font-size: 20px;
+    padding-top:4px;
+}
+
+.right-container #table_object{
+    float: left;
+    margin-top: 40px;
+    width:100%;
+}
+
+
+.right-container .statistical .heading-statistical{
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+/* style class add validation*/
+
+.input.error{
+    border-color:red;
+}
+.input:focus ~ .input-message {
+  display: block;
+}
+.input-message {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 180px;
+  font-size: 14px;
+  box-shadow: 0 0 10px #333;
+  min-height: 20px;
+  display: none;
+  animation: fadeIn .5s;
+  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.input-message::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
