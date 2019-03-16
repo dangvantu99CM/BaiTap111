@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title>Computer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="CssCalculator.css">
+        <script type="text/javascript" src = "CalculatorJs.js"></script>
+        <style>
+            input.Error{
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class = "container">
+
+            <div class = "js-nav css-nav col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                <div class = "left__nav col-lg-3 col-md-3 col-xs-3 col-sm-3" style="float: left">
+                    <div class = "css_element">
+                        <a href="#" style="display: inline-block;float:left"><i class="fas fa-calculator" style="color:#adebeb;font-size: 24px"></i></a>
+                    </div>
+                    <div class = "css_element">
+                        <p style="float:left;font-size: 20px">Calculator</p>
+                    </div>
+                </div>
+                <div class = "right__nav col-lg-9 col-md-9 col-xs-9 col-sm-9" style="float:right">
+                    <button type="button" style="background-color: #ff1a1a"><i class="fas fa-times" style="color: #fff"></i></button>
+                    <button type="button"><i class="far fa-square" style="color:#fff"></i></button>
+                    <button type="button"><i class="fas fa-minus" style="color:#fff"></i></button>
+                </div>
+            </div>
+
+            <div class = "js-container css-container col-lg-12 col-md-12 col-xs-12 col-sm-12" style="height:auto;margin-bottom: 16px;background-color: #e6ffff">
+                <div class = "main__nav" style="width:100%">
+                    <a href="#">Veiw</a>
+                    <a href="#">Edit</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class = "main__veiw col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <input id = "veiw-text" type = "text" value= "" style="float:left;width: 70%"/>
+                    <input id = "result" type = "text" value="" style="float:left;width:30%"/>
+                </div>
+                <div class = "main_button">
+
+                    <div class = "row_1 col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                        <button class = "button-js" type="button" value="MC" >MC</button>
+                        <button class = "button-js" type="button" value="MR" >MR</button>
+                        <button class = "button-js" type="button" value="MS" >MS</button>
+                        <button class = "button-js" type="button" value="M+" >M+</button>
+                        <button id = "def-button-js" onclick="button_js_def()" type="button" value="DEL" >DEL</button>
+
+                    </div>
+
+                    <div class = "row_1 col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                        <button type="button" value="(" onclick="show('(')">(</button>
+                        <button class = "button-js" type="button" value=")" onclick="show(')')" >)</button>
+                        <button class = "button-js" type="button" value="ANS" onclick="getAns()" >ANS</button>
+                        <button class = "button-js" onclick="show_reset('RS')" type="button" value="+" >RS</button>
+                        <button type="button"><img src="https://image.freepik.com/iconos-gratis/raiz-cuadrada_318-10368.jpg" alt="Sqrt" style="width: 15px"/></button>
+
+
+                    </div>
+
+                    <div class = "row_1 col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                        <button class = "button-js" onclick="show(7)" type="button" value="7" >7</button>
+                        <button class = "button-js" onclick="show(8)" type="button" value="8" >8</button>
+                        <button class = "button-js" onclick="show(9)" type="button" value="9" >9</button>
+                        <button class = "button-js" onclick="show('/')" type="button" value="/" >/</button>
+                        <button class = "button-js" onclick="show('%')" type="button" value="%" >%</button>
+
+
+                    </div>
+
+                    <div class = "row_1 col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                        <button class = "button-js" onclick="show(4)" type="button" value="4" >4</button>
+                        <button class = "button-js" onclick="show(5)" type="button" value="5" >5</button>
+                        <button class = "button-js" onclick="show(6)" type="button" value="6" >6</button>
+                        <button class = "button-js" onclick="show('*')" type="button" value="*" >*</button>
+                        <button class = "button-js" onclick="" type="button" value="1/x">1/x</button>
+
+
+                    </div>
+                    <div class = "row_1 col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+
+                        <button  class ="dif dif1 button-js" onclick="show(1)" type="button" value="1">1</button>
+                        <button  class ="dif dif1 button-js" onclick="show(2)" type="button" value="2">2</button>
+                        <button  class ="dif dif1 button-js" onclick="show(3)" type="button" value="3">3</button>
+                        <button  class ="dif dif1 button-js" onclick="show('-')" type="button" value="-">-</button>
+                        <button  class ="dif button-js"  onclick="evaluate1()" type="button" style="height: 103px;float: right;font-size: 40px;" value="=">=</button>
+                        <button  class ="dif dif1 button-js" onclick="show('0')" type="button" style="width: 304px !important" value="0">0</button>
+                        <button  class ="dif dif1 button-js" onclick="show('.')" type="button" value=".">.</button>
+                        <button  class ="dif dif1 button-js" onclick="show('+')" type="button" value="+">+</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

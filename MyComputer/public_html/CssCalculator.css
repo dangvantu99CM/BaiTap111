@@ -1,0 +1,74 @@
+.container{
+    border: 1px solid #ccc;
+    width: 830px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #f2f2f2;
+}
+.container .css-nav{
+    float:left;
+    border-bottom: 1px solid #ccc;
+}
+.container .css-nav .css_element{
+    float:left;
+    padding: 8px 8px;
+    margin-top: 7px;
+}
+.container .css-nav .right__nav
+{
+    height: 100%;
+    margin-top: 16px;
+}
+.container .css-nav .right__nav button{
+    float:right;
+    width:52px;
+    border-radius: 8px;
+}
+
+/**
+    ========================== main--nav =================================================
+*/
+.container .css-container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container .css-container .main__nav{
+
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.container .css-container .main__nav a{
+    color:#000;
+    font-size: 20px;
+    display: inline-block;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+.container .css-container .main__nav a:hover{
+    background-color: #00e6e6;
+}
+.container .css-container .main_button .row_1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container .css-container .main_button .row_1 .dif{
+    float:left;
+}
+.container .css-container .main_button .row_1 .dif1{
+    margin-left: 4px;
+    margin-bottom: 30px;
+}
+.container .css-container .main_button .row_1 button{
+    width:150px;
+    border-radius: 4px;
+    font-size: 22px;
+}
+.css-container .main__veiw{
+    padding-top: 15px;
+    height: 68px;
+}
+.css-container .main__veiw input{
+    height: 100%;
+    width: 100%;
+}
